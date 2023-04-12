@@ -30,24 +30,23 @@ An app that allows the users to track upcoming movies, see the top 10 currently 
 
 **Required Features**
 
-[] User authentication
-    [] Email and password
-[] Movie categories interests
-[] Movie guessing game
-[] Movie reviews through Rotten Tomatoes
-[] Current box office information
-[] Trending movie list
-[] Liked movies
+* User authentication
+    * Email and password
+* Movie categories interests
+* Movie guessing game
+* Movie reviews through Rotten Tomatoes
+* Current box office information
+* Trending movie list
+* Liked movies
 
 **Stretch Features**
-
-[] Favorite movies
-[] Advance search filters
-[] Social media sharing
-[] Post commment to movie reviews
-[] Watchlist and movie reminders
-[] Followers
-[] Streak system to engage users to revisit the app
+* Favorite movies
+* Advance search filters
+* Social media sharing
+* Post commment to movie reviews
+* Watchlist and movie reminders
+* Followers
+* Streak system to engage users to revisit the app
 
 
 ### 2. Screen Archetypes
