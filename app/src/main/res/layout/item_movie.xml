@@ -3,7 +3,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
-    android:layout_marginEnd="16dp"
     android:layout_height="250dp"
     android:id="@+id/itemMovie"
     >
@@ -30,6 +29,7 @@
         android:ellipsize="end"
         android:maxLines="5"
         android:text="Movie Title"
+        android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Title"
         app:layout_constraintEnd_toEndOf="@+id/moviePoster"
         app:layout_constraintHorizontal_bias="1.0"

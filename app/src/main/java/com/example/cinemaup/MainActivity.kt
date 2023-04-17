@@ -3,7 +3,6 @@ package com.example.cinemaup
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.codepath.asynchttpclient.AsyncHttpClient
@@ -41,7 +40,7 @@ class MainActivity : AppCompatActivity() {
         val view = binding.root
         setContentView(view)
 
-        moviesRecyclerView = findViewById(R.id.movies)
+        moviesRecyclerView = findViewById(R.id.nowPlaying)
         val movieAdapter = MovieAdapter(this, movieMutableList)
         moviesRecyclerView.adapter = movieAdapter
 

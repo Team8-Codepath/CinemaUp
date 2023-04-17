@@ -6,12 +6,20 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+<!--    <TextView-->
+<!--        android:id="@+id/textView"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="TextView"-->
+<!--        tools:layout_editor_absoluteX="128dp"-->
+<!--        tools:layout_editor_absoluteY="352dp" />-->
+
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/movies"
+        android:id="@+id/nowPlaying"
 
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_height="250dp"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -30,13 +38,24 @@
 <!--        android:layout_gravity="center"-->
 <!--        android:indeterminate="true"-->
 <!--        android:theme="@style/Widget.AppCompat.ProgressBar" />-->
+<!--    note: add second recyclerview for upcoming movies,
+            have top constrained to bottom of nowPlaying,
+            have nav const top to it's bottom,
+            create nav bar button from lab -->
+
+    <!--    <androidx.recyclerview.widget.RecyclerView-->
+    <!--        android:layout_width="409dp"-->
+    <!--        android:layout_height="430dp"-->
+    <!--        tools:layout_editor_absoluteX="1dp"-->
+    <!--        tools:layout_editor_absoluteY="251dp" />-->
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView"
         android:layout_width="410dp"
         android:layout_height="49dp"
-        app:layout_constraintBottom_toBottomOf="@+id/movies"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
