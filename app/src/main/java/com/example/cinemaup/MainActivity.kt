@@ -45,11 +45,11 @@ class MainActivity : AppCompatActivity() {
         val movieAdapter = MovieAdapter(this, movieMutableList)
         moviesRecyclerView.adapter = movieAdapter
 
-        moviesRecyclerView.layoutManager = LinearLayoutManager(this).also {
-            val dividerItemDecoration = DividerItemDecoration(this, it.orientation)
-            moviesRecyclerView.addItemDecoration(dividerItemDecoration)
+        moviesRecyclerView.layoutManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)//.also {
+//            val dividerItemDecoration = DividerItemDecoration(this, it.orientation)
+//            moviesRecyclerView.addItemDecoration(dividerItemDecoration)
 
-        }
+//        }
 
         val client = AsyncHttpClient()
         client.get(MOVIE_SEARCH_URL, object : JsonHttpResponseHandler() {

@@ -8,6 +8,7 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/movies"
+
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -16,6 +17,10 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:listitem="@layout/item_movie"/>
 
+<!--    android:orientation="horizontal"-->
+<!--    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"-->
+<!--    tools:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"-->
+<!--    tools:itemCount="6"-->
 <!--    note: need to constrain progress bar-->
 <!--    <androidx.core.widget.ContentLoadingProgressBar-->
 <!--        android:id="@+id/progress"-->
