@@ -96,3 +96,5 @@ An app that allows the users to track upcoming movies, see the top 10 currently 
 
 ## Wireframes
 <img src='finalProjWire.png' width=''>
+
+##Sprint 1
