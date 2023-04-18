@@ -102,4 +102,4 @@ An app that allows the users to track upcoming movies, see the top 10 currently 
 - [X] Now Playing Movies Horizontal Recycler View
 - [X] Navigation Bar
 - [X] Detailed Movie with Intents
-- [X] Sprint 2 Issues Assigned https://github.com/Team8-Codepath/FinalProject/milestones
+- [X] Sprint 2 Issues Assigned [Sprint 2](https://github.com/Team8-Codepath/FinalProject/milestones)
