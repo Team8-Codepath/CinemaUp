@@ -98,3 +98,7 @@ An app that allows the users to track upcoming movies, see the top 10 currently 
 <img src='finalProjWire.png' width=''>
 
 ## Sprint 1
+- [X] Create User Authentication Page
+- [X] Create Now Playing Movies Horizontal Recycler View
+- [X] Create Navigation Bar
+- [X] Create Detailed Movie with Intents
