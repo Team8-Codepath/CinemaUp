@@ -22,7 +22,7 @@ class MovieAdapter(private val context: Context, private val movies: List<Movie>
     RecyclerView.Adapter<MovieAdapter.ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        val view = LayoutInflater.from(context).inflate(R.layout.item_movie, parent, false)
+        val view = LayoutInflater.from(context).inflate(R.layout.item_nowplaying, parent, false)
         return ViewHolder(view)
     }
 
@@ -37,8 +37,8 @@ class MovieAdapter(private val context: Context, private val movies: List<Movie>
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView)
     {
 
-        private val posterImageView = itemView.findViewById<ImageView>(R.id.moviePoster)
-        private val titleTextView = itemView.findViewById<TextView>(R.id.movieTitle)
+        private val posterImageView = itemView.findViewById<ImageView>(R.id.moviePoster_NP)
+        private val titleTextView = itemView.findViewById<TextView>(R.id.movieTitle_NP)
         //note: get the views to show on the main activity
 
 //        private val overviewTextView = itemView.findViewById<TextView>(R.id.movieOverview)

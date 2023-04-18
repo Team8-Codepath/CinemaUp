@@ -4,12 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
     android:layout_height="250dp"
-    android:id="@+id/itemMovie"
+    android:id="@+id/itemNowPlayingMovie"
     >
 
 
     <ImageView
-        android:id="@+id/moviePoster"
+        android:id="@+id/moviePoster_NP"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:scaleType="centerInside"
@@ -20,7 +20,7 @@
         tools:srcCompat="@tools:sample/avatars" />
 
     <TextView
-        android:id="@+id/movieTitle"
+        android:id="@+id/movieTitle_NP"
         android:layout_width="0dp"
         android:layout_height="80dp"
         android:layout_marginStart="10dp"
@@ -31,10 +31,10 @@
         android:text="Movie Title"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Title"
-        app:layout_constraintEnd_toEndOf="@+id/moviePoster"
+        app:layout_constraintEnd_toEndOf="@+id/moviePoster_NP"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/moviePoster" />
+        app:layout_constraintTop_toBottomOf="@+id/moviePoster_NP" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

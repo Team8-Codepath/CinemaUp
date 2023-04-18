@@ -23,7 +23,8 @@ fun createJson() = Json {
 private const val TAG = "MainActivity/"
 
 private const val SEARCH_API_KEY = "a07e22bc18f5cb106bfe4cc1f83ad8ed"//BuildConfig.API_KEY
-private const val MOVIE_SEARCH_URL = "https://api.themoviedb.org/3/movie/now_playing?api_key=${SEARCH_API_KEY}&language=en-US&page=1.json"
+private const val NowPlaying_MOVIE_SEARCH_URL = "https://api.themoviedb.org/3/movie/now_playing?api_key=${SEARCH_API_KEY}&language=en-US&page=1.json"
+private const val Upcoming_MOVIE_SEARCH_URL = "https://api.themoviedb.org/3/movie/upcoming?api_key=${SEARCH_API_KEY}&language=en-US&page=1.json"
 //    "https://api.nytimes.com/svc/search/v2/articlesearch.json?api-key=${SEARCH_API_KEY}"
 
 class MainActivity : AppCompatActivity() {
@@ -40,7 +41,7 @@ class MainActivity : AppCompatActivity() {
         val view = binding.root
         setContentView(view)
 
-        moviesRecyclerView = findViewById(R.id.nowPlaying)
+        moviesRecyclerView = findViewById(R.id.nowPlayingRV)
         val movieAdapter = MovieAdapter(this, movieMutableList)
         moviesRecyclerView.adapter = movieAdapter
 
@@ -51,7 +52,7 @@ class MainActivity : AppCompatActivity() {
 //        }
 
         val client = AsyncHttpClient()
-        client.get(MOVIE_SEARCH_URL, object : JsonHttpResponseHandler() {
+        client.get(NowPlaying_MOVIE_SEARCH_URL, object : JsonHttpResponseHandler() {
 
             override fun onFailure(
                 statusCode: Int,

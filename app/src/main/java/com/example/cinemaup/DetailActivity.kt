@@ -21,8 +21,8 @@ class DetailActivity: AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_detail)
 
-        titleTextView = findViewById(R.id.movieTitle)
-        posterImageView = findViewById(R.id.moviePoster)
+        titleTextView = findViewById(R.id.movieTitle_NP)
+        posterImageView = findViewById(R.id.moviePoster_NP)
         overviewTextView = findViewById(R.id.movieOverview)
         ratingTextView = findViewById(R.id.movieRating)
         releaseDateTextView = findViewById(R.id.movieRelease)

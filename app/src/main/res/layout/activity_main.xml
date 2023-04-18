@@ -6,48 +6,48 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-<!--    <TextView-->
-<!--        android:id="@+id/textView"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:text="TextView"-->
-<!--        tools:layout_editor_absoluteX="128dp"-->
-<!--        tools:layout_editor_absoluteY="352dp" />-->
+    <TextView
+        android:id="@+id/nowPlayingTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:textSize="24dp"
+        android:text="Now Playing Movies"
+        android:textStyle="bold"
+        android:paddingStart="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/nowPlaying"
-
+        android:id="@+id/nowPlayingRV"
         android:layout_width="match_parent"
-        android:layout_height="250dp"
-
+        android:layout_height="300dp"
+        android:paddingTop="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:listitem="@layout/item_movie"/>
+        app:layout_constraintTop_toBottomOf="@+id/nowPlayingTextView"
+        tools:listitem="@layout/item_nowplaying"/>
 
-<!--    android:orientation="horizontal"-->
-<!--    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"-->
-<!--    tools:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"-->
-<!--    tools:itemCount="6"-->
-<!--    note: need to constrain progress bar-->
-<!--    <androidx.core.widget.ContentLoadingProgressBar-->
-<!--        android:id="@+id/progress"-->
-<!--        style="?android:attr/progressBarStyleLarge"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_gravity="center"-->
-<!--        android:indeterminate="true"-->
-<!--        android:theme="@style/Widget.AppCompat.ProgressBar" />-->
-<!--    note: add second recyclerview for upcoming movies,
-            have top constrained to bottom of nowPlaying,
-            have nav const top to it's bottom,
-            create nav bar button from lab -->
+    <TextView
+        android:id="@+id/upcomingTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:textSize="20dp"
+        android:text="Upcoming Movies (Sprint 2 Implement)"
+        android:textStyle="bold"
+        android:paddingStart="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nowPlayingRV" />
 
-    <!--    <androidx.recyclerview.widget.RecyclerView-->
-    <!--        android:layout_width="409dp"-->
-    <!--        android:layout_height="430dp"-->
-    <!--        tools:layout_editor_absoluteX="1dp"-->
-    <!--        tools:layout_editor_absoluteY="251dp" />-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/upcomingRV"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:listitem="@layout/item_upcoming"/>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView"
@@ -55,7 +55,19 @@
         android:layout_height="49dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/menu_bottom_navigation"
+        />
+
+    <!--    note: need to constrain progress bar-->
+    <!--    <androidx.core.widget.ContentLoadingProgressBar-->
+    <!--        android:id="@+id/progress"-->
+    <!--        style="?android:attr/progressBarStyleLarge"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_gravity="center"-->
+    <!--        android:indeterminate="true"-->
+    <!--        android:theme="@style/Widget.AppCompat.ProgressBar" />-->
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
