@@ -100,9 +100,12 @@ An app that allows the users to track upcoming movies, see the top 10 currently 
 ## Sprint 1
 For Sprint 1 we decided to create seperate features of our app on different branches. We will be merging those branches and integrating those different features in Sprint 2.
 - [X] User Authentication Page
+- [X] Setup NowPlaying and Upcoming API calls
 - [X] Now Playing Movies Horizontal Recycler View
 - [X] Navigation Bar
 - [X] Detailed Movie with Intents
 - [X] Sprint 2 Issues Assigned [Sprint 2](https://github.com/Team8-Codepath/FinalProject/milestones)
 
 <img src='https://github.com/Team8-Codepath/FinalProject/blob/main/cinemaUplogin2.gif' width="250" height="400">
+<img src='https://github.com/Team8-Codepath/FinalProject/blob/basicLayout/Sprint1_BasicLayout_GIF.gif' width="250" height="400">
+
