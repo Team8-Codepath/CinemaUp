@@ -105,4 +105,4 @@ For Sprint 1 we decided to create seperate features of our app on different bran
 - [X] Detailed Movie with Intents
 - [X] Sprint 2 Issues Assigned [Sprint 2](https://github.com/Team8-Codepath/FinalProject/milestones)
 
-<img src='https://github.com/Team8-Codepath/FinalProject/blob/main/cinemaUplogin2.gif' width="250" height="350">
+<img src='https://github.com/Team8-Codepath/FinalProject/blob/main/cinemaUplogin2.gif' width="250" height="400">
