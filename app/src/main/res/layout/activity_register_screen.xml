@@ -5,31 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#000000"
-    tools:context=".LoginScreen">
+    tools:context=".RegisterScreen">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="250dp"
-        android:layout_height="54dp"
-        android:layout_marginStart="38dp"
-        android:layout_marginTop="89dp"
-        android:text="Welcome to"
-        android:textColor="#FFFFFF"
-        android:textSize="24sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="195dp"
-        android:layout_height="55dp"
-        android:layout_marginStart="38dp"
-        android:layout_marginTop="7dp"
-        android:text="CinemaUp"
-        android:textColor="#FFFFFF"
-        android:textSize="34sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
 
     <Button
         android:id="@+id/registerButton"
@@ -37,17 +16,17 @@
         android:layout_height="75dp"
         android:layout_marginStart="36dp"
         android:layout_marginTop="24dp"
-        android:text="Login"
+        android:text="Register"
         app:cornerRadius="35dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/passEditLog" />
+        app:layout_constraintTop_toBottomOf="@+id/passEditReg2" />
 
     <EditText
-        android:id="@+id/emailEditLogin"
+        android:id="@+id/emailEditReg"
         android:layout_width="275dp"
         android:layout_height="55dp"
         android:layout_marginStart="36dp"
-        android:layout_marginTop="52dp"
+        android:layout_marginTop="250dp"
         android:background="@drawable/rounded_border"
         android:backgroundTint="#FFFFFF"
         android:ems="10"
@@ -61,10 +40,10 @@
         android:textColorHint="#000000"
         app:circularflow_radiusInDP="25"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/passEditLog"
+        android:id="@+id/passEditReg2"
         android:layout_width="275dp"
         android:layout_height="55dp"
         android:layout_marginStart="36dp"
@@ -82,33 +61,34 @@
         android:textColor="#000000"
         android:textColorHint="#000000"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/emailEditLogin" />
+        app:layout_constraintTop_toBottomOf="@+id/emailEditReg" />
 
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="64dp"
-        android:layout_marginTop="144dp"
-        android:text="New user? "
+        android:layout_width="304dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="152dp"
+        android:text="Existing user?"
+        android:textAlignment="center"
         android:textColor="#FFFFFF"
-        android:textSize="24sp"
+        android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/registerButton" />
 
     <TextView
         android:id="@+id/toRegisterText"
-        android:layout_width="131dp"
-        android:layout_height="41dp"
-        android:layout_marginStart="44dp"
-        android:layout_marginTop="144dp"
-        android:clickable="true"
-        android:text="Register"
+        android:layout_width="113dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="148dp"
+        android:layout_marginBottom="32dp"
+        android:text="Log in"
+        android:textAlignment="center"
         android:textColor="#2196F3"
         android:textSize="24sp"
-        app:layout_constraintStart_toEndOf="@+id/textView3"
-        app:layout_constraintTop_toBottomOf="@+id/registerButton" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView5"
@@ -137,5 +117,29 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="47dp"
+        android:text="New here?"
+        android:textColor="#F8F8F8"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="21dp"
+        android:text="Register now!"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
