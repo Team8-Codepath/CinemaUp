@@ -20,6 +20,9 @@ data class MovieResponse (
 @Serializable
 
 data class Movie(
+    @SerialName("id")
+    val id: Int,
+
     @SerialName("title")
     val title: String?,
 
@@ -34,10 +37,14 @@ data class Movie(
 
     @SerialName("vote_average")
     val rating: Float?,
+
+    var isLiked: Boolean = false
 ) : java.io.Serializable
 {
     val posterUrl =
         "https://image.tmdb.org/t/p/w500/${poster}"
 
     val ratingStr = rating.toString()
+
+//    var isLiked = false
 }
