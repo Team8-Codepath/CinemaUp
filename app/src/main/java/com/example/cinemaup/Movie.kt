@@ -1,6 +1,8 @@
 package com.example.cinemaup
 
 
+import android.os.Parcel
+import android.os.Parcelable
 import android.support.annotation.Keep
 import com.google.gson.annotations.SerializedName
 import kotlinx.serialization.SerialName
@@ -23,6 +25,9 @@ data class Movie(
     @SerialName("title")
     val title: String?,
 
+    @SerialName("id")
+    val movie_id: String?,
+
     @SerialName("overview")
     val overview: String?,
 
@@ -34,10 +39,11 @@ data class Movie(
 
     @SerialName("vote_average")
     val rating: Float?,
-) : java.io.Serializable
-{
+
+) : java.io.Serializable{
     val posterUrl =
         "https://image.tmdb.org/t/p/w500/${poster}"
 
     val ratingStr = rating.toString()
+
 }
