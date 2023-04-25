@@ -2,22 +2,21 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-
-    <item
-        android:id="@+id/nav_home"
-        android:icon="@drawable/baseline_home_24"
-        android:title="Home" />
-
     <item
         android:id="@+id/nav_game"
         android:icon="@drawable/baseline_game_asset_24"
-        android:title="Movie Game" />
+        android:title="Games" />
 
+
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/baseline_explore_24"
+        android:title="Explore" />
 
 
     <item
         android:id="@+id/nav_liked"
-        android:icon="@drawable/baseline_liked_24"
-        android:title="Liked Movies" />
+        android:icon="@drawable/baseline_movie_24"
+        android:title="Watch List" />
 
 </menu>

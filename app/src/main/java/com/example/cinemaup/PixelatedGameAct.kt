@@ -159,13 +159,7 @@ class PixelatedGameAct : AppCompatActivity() {
             supportFragmentManager.beginTransaction()
                 .replace(R.id.buttonFragment, fragment)
                 .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
-
-                .addToBackStack(null)
                 .commit()
-
-
-
-
 
         }
     }

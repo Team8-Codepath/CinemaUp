@@ -43,7 +43,7 @@ class moviegame : Fragment() {
 
         val toGeneratePoster =view.findViewById<Button>(R.id.toGeneratePosterButton)
         toGeneratePoster.setOnClickListener{
-            val intent =  Intent(requireContext(), posterMaker::class.java)
+            val intent =  Intent(requireContext(), PosterMaker::class.java)
             startActivity(intent)
         }
         return view

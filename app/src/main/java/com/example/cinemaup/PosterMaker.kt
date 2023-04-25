@@ -1,19 +1,12 @@
 package com.example.cinemaup
 
 import android.content.Context
-import android.media.Image
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Button
-import android.widget.EditText
 import android.widget.ImageView
 import com.aallam.openai.api.BetaOpenAI
-import com.aallam.openai.api.http.Timeout
-import com.aallam.openai.api.image.ImageCreation
-import com.aallam.openai.api.image.ImageSize
-import com.aallam.openai.client.OpenAI
-import com.aallam.openai.client.OpenAIConfig
 import com.android.volley.RequestQueue
 import com.android.volley.Response
 import com.android.volley.RetryPolicy
@@ -23,15 +16,11 @@ import com.android.volley.toolbox.Volley
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.resource.bitmap.RoundedCorners
 import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions
-import com.google.android.material.textfield.TextInputEditText
 import com.google.android.material.textfield.TextInputLayout
-import com.squareup.picasso.Picasso
-import kotlin.time.Duration.Companion.seconds
 import kotlinx.coroutines.*
 import org.json.JSONObject
-import java.lang.reflect.Method
 
-class posterMaker : AppCompatActivity() {
+class PosterMaker : AppCompatActivity() {
     var url = "https://api.openai.com/v1/images/generations"
 
     override fun onCreate(savedInstanceState: Bundle?) {

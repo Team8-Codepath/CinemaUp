@@ -1,91 +1,96 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/pixelGameScreenConstraint"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".PixelatedGameAct">
+    android:layout_height="match_parent">
 
-    <ImageView
-        android:id="@+id/pixelatedposter"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="100dp"
-        android:layout_marginEnd="100dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@tools:sample/avatars" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/pixelGameScreenConstraint"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".PixelatedGameAct">
 
-    <FrameLayout
-        android:id="@+id/buttonFragment"
-        android:layout_width="371dp"
-        android:layout_height="423dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="5dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/pixelatedposter">
+        <ImageView
+            android:id="@+id/pixelatedposter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="100dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.493"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@tools:sample/avatars" />
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+        <FrameLayout
+            android:id="@+id/buttonFragment"
+            android:layout_width="371dp"
+            android:layout_height="423dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pixelatedposter">
 
-            <Button
-                android:id="@+id/option1P"
-                android:layout_width="293dp"
-                android:layout_height="85dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginEnd="41dp"
-                android:backgroundTint="#324897"
-                android:elevation="20dp"
-                android:text="Button"
-                app:cornerRadius="30dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-            <Button
-                android:id="@+id/option2p"
-                android:layout_width="300dp"
-                android:layout_height="85dp"
-                android:layout_marginTop="30dp"
-                android:layout_marginEnd="41dp"
-                android:backgroundTint="#324897"
-                android:elevation="20dp"
-                android:text="Button"
-                app:cornerRadius="30dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/option1P" />
+                <Button
+                    android:id="@+id/option1P"
+                    android:layout_width="293dp"
+                    android:layout_height="85dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="41dp"
+                    android:backgroundTint="#324897"
+                    android:elevation="20dp"
+                    android:text="Button"
+                    app:cornerRadius="30dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
-            <Button
-                android:id="@+id/option3p"
-                android:layout_width="300dp"
-                android:layout_height="85dp"
-                android:layout_marginTop="30dp"
-                android:layout_marginEnd="41dp"
-                android:backgroundTint="#324897"
-                android:elevation="20dp"
-                android:text="Button"
-                app:cornerRadius="30dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/option2p" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
-    </FrameLayout>
+                <Button
+                    android:id="@+id/option2p"
+                    android:layout_width="300dp"
+                    android:layout_height="85dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="41dp"
+                    android:backgroundTint="#324897"
+                    android:elevation="20dp"
+                    android:text="Button"
+                    app:cornerRadius="30dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/option1P" />
 
-    <Button
-        android:id="@+id/skipQuestionButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="10dp"
-        android:backgroundTint="#324897"
-        android:text="Next Question"
-        app:cornerRadius="30dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+                <Button
+                    android:id="@+id/option3p"
+                    android:layout_width="300dp"
+                    android:layout_height="85dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="41dp"
+                    android:backgroundTint="#324897"
+                    android:elevation="20dp"
+                    android:text="Button"
+                    app:cornerRadius="30dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/option2p" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </FrameLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <Button
+            android:id="@+id/skipQuestionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="#324897"
+            android:text="Next Question"
+            app:cornerRadius="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
