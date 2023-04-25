@@ -37,7 +37,6 @@ class ExploreFragment : Fragment() {
 
     private lateinit var nowPlayingRV: RecyclerView
     private lateinit var upcomingRV: RecyclerView
-    private lateinit var binding: ActivityMainBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -45,17 +44,17 @@ class ExploreFragment : Fragment() {
     ): View {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_explore, container, false)
-        nowPlayingRV = findViewById(R.id.nowPlayingRV)
-        val nowPlayingAdapter = MovieAdapter(this, nowPlayingList)
+        nowPlayingRV = view.findViewById(R.id.nowPlayingRV)
+        val nowPlayingAdapter = MovieAdapter(view.context, nowPlayingList)
         nowPlayingRV.adapter = nowPlayingAdapter
 
-        nowPlayingRV.layoutManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false).also {
-            val dividerItemDecoration = DividerItemDecoration(this, it.orientation)
+        nowPlayingRV.layoutManager = LinearLayoutManager(view.context, LinearLayoutManager.HORIZONTAL, false).also {
+            val dividerItemDecoration = DividerItemDecoration(view.context, it.orientation)
             nowPlayingRV.addItemDecoration(dividerItemDecoration)
         }
 
         //note: Bottom Recycler View layout and binding-------------
-        upcomingRV = findViewById(R.id.upcomingRV)
+        upcomingRV = view.findViewById(R.id.upcomingRV)
         val upcomingAdapter = MovieAdapter(view.context, upcomingList)
         upcomingRV.adapter = upcomingAdapter
 

@@ -7,17 +7,21 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.isVisible
+import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.DividerItemDecoration
-import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.resource.bitmap.RoundedCorners
 import com.codepath.asynchttpclient.AsyncHttpClient
 import com.codepath.asynchttpclient.callback.JsonHttpResponseHandler
+import kotlinx.coroutines.Dispatchers.IO
+import kotlinx.coroutines.launch
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 import okhttp3.Headers
@@ -35,7 +39,10 @@ class DetailActivity: AppCompatActivity() {
     private lateinit var castRecyclerView: RecyclerView
     private lateinit var castAdapter: CastAdapter
     private val castDetailsList = mutableListOf<CastDetails>()
+    private lateinit var addButton: Button
+    private lateinit var addedTextView: TextView
     //note: init the data we need to display
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -55,6 +62,10 @@ class DetailActivity: AppCompatActivity() {
             castRecyclerView.addItemDecoration(dividerItemDecoration)
         }
 
+        addButton=findViewById(R.id.movieAddButton)
+        addedTextView=findViewById(R.id.addedTextView)
+
+        addedTextView.isVisible=false
         //note: set equal to the Views on the activity_detail.xml file
 
         val movie = intent.getSerializableExtra(MOVIE_EXTRA) as Movie
@@ -75,6 +86,22 @@ class DetailActivity: AppCompatActivity() {
             .load(movie.posterUrl)
             .into(posterImageView)
 
+        addButton.setOnClickListener {
+            lifecycleScope.launch(IO) {
+                //val memory = (application as LegDayApplication).db.legDayDao().getAll()
+                //(application as LegDayApplication).db.legDayDao().deleteAll()
+                (application as WatchListApplication).db.watchListDao().insert(
+                    WatchListMovieEntity(
+                        title=movie.title,
+                        overview=movie.overview,
+                        poster=movie.posterUrl,
+                        releaseDate=movie.releaseDate,
+                        rating=movie.rating
+                    )
+                )
+            }
+            addButton.isVisible=false
+        }
     }
 
     private fun getCastMembers(movie_id: Int){
