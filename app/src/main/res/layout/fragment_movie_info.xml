@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".movieInfoFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="366dp"
+        android:layout_height="351dp"
+        android:layout_marginRight="10dp"
+        android:outlineAmbientShadowColor="#F40E0E"
+        android:outlineSpotShadowColor="#CC0000"
+        app:cardBackgroundColor="#1E2133"
+        app:cardCornerRadius="25dp"
+        app:cardElevation="25dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/descriptioncontainergame"
+                android:layout_width="314dp"
+                android:layout_height="118dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="16dp"
+                android:text="TextView"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Descriptionmoviegame" />
+
+            <TextView
+                android:id="@+id/movietitlegame"
+                android:layout_width="229dp"
+                android:layout_height="73dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="TextView"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/Descriptionmoviegame"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:text="Description"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ratingviewgame" />
+
+            <TextView
+                android:id="@+id/ratingcontainergame"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="24dp"
+                android:text="rating"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                app:layout_constraintStart_toEndOf="@+id/ratingviewgame"
+                app:layout_constraintTop_toBottomOf="@+id/movietitlegame" />
+
+            <TextView
+                android:id="@+id/ratingviewgame"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="24dp"
+                android:text="Rating"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/movietitlegame" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>

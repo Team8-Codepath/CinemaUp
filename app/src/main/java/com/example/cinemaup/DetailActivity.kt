@@ -78,7 +78,7 @@ class DetailActivity: AppCompatActivity() {
         //note: Set the detailed information for the movie
         titleTextView.text = movie.title
         overviewTextView.text = movie.overview
-        ratingTextView.text = "Rating: "+ movie.ratingStr
+        ratingTextView.text = movie.ratingStr
         releaseDateTextView.text = "Release Date: "+ movie.releaseDate
 
         //note: Load the movie image

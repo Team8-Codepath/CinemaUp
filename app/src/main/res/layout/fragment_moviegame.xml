@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".moviegame">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/toPixelMovieGameButton"
+            android:layout_width="297dp"
+            android:layout_height="121dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="32dp"
+            android:text="Pixelated game"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/toGeneratePosterButton"
+            android:layout_width="296dp"
+            android:layout_height="113dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="84dp"
+            android:text="Generate your own poster"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toPixelMovieGameButton" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

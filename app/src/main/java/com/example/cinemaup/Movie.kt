@@ -1,6 +1,8 @@
 package com.example.cinemaup
 
 
+import android.os.Parcel
+import android.os.Parcelable
 import android.support.annotation.Keep
 import com.google.gson.annotations.SerializedName
 import kotlinx.serialization.SerialName
@@ -46,5 +48,4 @@ data class Movie(
 
     val ratingStr = rating.toString()
 
-//    var isLiked = false
 }
