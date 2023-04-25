@@ -7,6 +7,7 @@
 1. [Product Spec](#Product-Spec)
 1. [Wireframes](#Wireframes)
 1. [Sprint 1](#Sprint-1)
+1. [Sprint 2](#Sprint-2)
 
 ## Overview
 
@@ -108,4 +109,17 @@ For Sprint 1 we decided to create seperate features of our app on different bran
 
 <img src='https://github.com/Team8-Codepath/FinalProject/blob/main/cinemaUplogin2.gif' width="250" height="400">
 <img src='https://github.com/Team8-Codepath/FinalProject/blob/basicLayout/Sprint1_BasicLayout_GIF.gif' width="250" height="400">
+
+
+## Sprint 2
+For Sprint 2 we have merged all the different features each team member worked on for this app. 
+- [X] Now Playing and Upcoming Movies in separate Recycler Views on the Home Page
+- [X] Movie details displayed on Detail Activity with API call for movie's cast list
+- [X] Detail Activity allows user to add movies to watchlist
+- [X] Watchlist is persistent data 
+- [X] Movie Poster Guessing Game - poster is blurred and user has to guess the movie title
+- [X] Movie Poster Generation Game via OpenAI API call
+- [X] Navigation Bar allows user to change activties
+
+<img src='https://github.com/Team8-Codepath/FinalProject/blob/main/Sprint2_GIF.gif' width="">
 
