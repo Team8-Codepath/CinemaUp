@@ -125,4 +125,4 @@ For Sprint 2 we have merged all the different features each team member worked o
 
 ## App Demo Video
 [<img src="https://i.ytimg.com/vi/8Otri2ySoHI/maxresdefault.jpg" width="50%">](https://www.youtube.com/watch?v=8Otri2ySoHI "CinemaUp - CodePath Group 8 App Demo")
-
+[![Watch the video](https://img.youtube.com/vi/8Otri2ySoHI/maxresdefault.jpg)](https://youtu.be/8Otri2ySoHI)
