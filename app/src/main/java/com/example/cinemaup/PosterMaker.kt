@@ -106,7 +106,7 @@ class PosterMaker : AppCompatActivity() {
                     // adding headers on below line.
                     params["Content-Type"] = "application/json"
                     params["Authorization"] =
-                        "Bearer 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"
+                        "Bearer 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"
                     return params;
                 }
             }
