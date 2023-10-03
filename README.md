@@ -123,3 +123,5 @@ For Sprint 2 we have merged all the different features each team member worked o
 
 <img src='https://github.com/Team8-Codepath/FinalProject/blob/main/Sprint2_GIF.gif' width="">
 
+## App Demo Video
+[![YouTube Link](https://img.youtube.com/vi/8Otri2ySoHI/maxresdefault.jpg)](https://youtu.be/8Otri2ySoHI)
